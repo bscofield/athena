@@ -1,10 +1,10 @@
 athena
     by Ben Scofield
-    FIXME (url)
+    http://github.com/bscofield/athena/tree/master
 
 == DESCRIPTION:
 
-FIXME (describe your package)
+Athena is a Ruby microframework for RESTful web applications. 
 
 == FEATURES/PROBLEMS:
 
@@ -12,7 +12,14 @@ FIXME (describe your package)
 
 == SYNOPSIS:
 
-  FIXME (code sample of usage)
+  # In a config.ru or rackup file:
+
+  require 'athena'
+  
+  use Rack::Static, :urls => ['/images', '/stylesheets'], :root => 'public'
+
+  Athena.load_resources
+  run Athena::Application.new
 
 == REQUIREMENTS:
 
@@ -20,13 +27,13 @@ FIXME (describe your package)
 
 == INSTALL:
 
-* FIXME (sudo gem install, anything else)
+* sudo gem install athena
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2008 Ben Scofield
+Copyright (c) 2009 Ben Scofield
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

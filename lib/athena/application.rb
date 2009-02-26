@@ -14,6 +14,10 @@ module Athena
       @route_map
     end
     
+    def self.load_resources
+      Athena.require_all_libs_relative_to('resources')
+    end
+    
     def process_params(params)
       nested_pattern = /^(.+?)\[(.*\])/
       processed = {}

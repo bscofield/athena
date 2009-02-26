@@ -7,7 +7,6 @@ module Athena
     end
 
     def persist(klass, &block)
-      # TODO: create an instance of klass representing the persistent storage for self's objects
       pklass = Class.new(klass)
 
       pklass.class_eval(&block)
@@ -37,5 +36,3 @@ module Athena
     end
   end
 end
-
-# PRESENTATION: creating class dynamically + class_eval

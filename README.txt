@@ -8,7 +8,10 @@ Athena is a Ruby microframework for RESTful web applications.
 
 == FEATURES/PROBLEMS:
 
-* FIXME (list of features or problems)
+* Extract routing to modules
+* Extract rendering engine to modules
+* MethodNotAllowed exception should return allowed methods
+* Handle redirects
 
 == SYNOPSIS:
 

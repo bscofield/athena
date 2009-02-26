@@ -49,12 +49,3 @@ module Athena
     def delete; raise Athena::MethodNotAllowed; end
   end
 end
-
-# TODO: refactor ERB processing into a module
-# TODO: MethodNotAllowed exception should return allowed methods
-# TODO: automatically create singleton/collection resource? unless specified not to
-  # TODO: default_resource changes to default_resource([nil || :collection])
-# PRESENTATION: method_missing and self.method_missing for API intuitiveness DOESN'T WORK
-# PRESENTATION: issues with class/eigenclass/object 
-
-# TODO: redirects

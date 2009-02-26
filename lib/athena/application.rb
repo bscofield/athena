@@ -58,7 +58,3 @@ module Athena
     end
   end
 end
-
-# TODO: Set ATHENA_ROOT constant in some way
-# TODO: Extract routing to a module
-# PRESENTATION: framework is routing and response (resource.output)

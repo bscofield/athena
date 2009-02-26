@@ -4,7 +4,7 @@ athena
 
 == DESCRIPTION:
 
-Athena is a Ruby microframework for RESTful web applications. 
+Athena is a Ruby microframework for RESTful web applications. It is EXTREMELY EXPERIMENTAL, and is not guaranteed to work at any point in time.
 
 == FEATURES/PROBLEMS:
 
